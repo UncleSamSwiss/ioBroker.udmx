@@ -1,0 +1,41 @@
+{
+    "common": {
+        "name": "udmx",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial version",
+                "de": "initial version"
+            }
+        },
+        "title": "uDMX Adapter",
+        "titleLang": {
+            "en": "uDMX Adapter",
+            "de": "uDMX Adapter",
+            "ru": "Драйвер для uDMX"
+        },
+        "desc":                     {
+            "en": "Talks to DMX devices using the Anyma uDMX USB adapter",
+            "de": "Spricht DMX-Geräte mit dem Anyma uDMX USB Adapter an."
+        },
+        "authors": [
+            "UncleSamSwiss <samuel.weibel@gmail.com>"
+        ],
+        "license":                  "Apache 2.0",
+        "platform":                 "Javascript/Node.js",
+        "mode":                     "daemon",
+        "messagebox":               true,
+        "readme":                   "https://github.com/UncleSamSwiss/ioBroker.udmx/blob/master/README.md",
+        "loglevel":                 "info",
+        "type":                     "hardware",
+        "keywords":                 ["DMX", "Anyma", "lights"],
+        "icon":                     "udmx.png",
+        "extIcon":                  "https://raw.githubusercontent.com/UncleSamSwiss/ioBroker.udmx/master/admin/udmx.png"
+    },
+    "native": {
+      "addressCount": 1,
+      "mockDevice": true
+    },
+    "objects": [
+    ]
+}
