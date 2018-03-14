@@ -53,7 +53,7 @@ DmxAdapter.prototype.main = function (allStates) {
         that._udmxDevice = new MockUsbDevice(that.adapter.log);
     }
     else {
-        that._udmxDevice = usb.findByIds();
+        that._udmxDevice = usb.findByIds(vendorId, productId);
         if (!that._udmxDevice) {
             that.adapter.log.error("Couldn't find an Anyma USB adapter, not doing anything!");
             return;
@@ -134,7 +134,9 @@ DmxAdapter.prototype.sendDMXBuffer = function () {
     var that = this;
     if (that._udmxDevice) {
         that._udmxDevice.controlTransfer(0x40, 0x0002, that._dmxBuffer.length, 0, that._dmxBuffer, function (error) {
-            that.adapter.log.error('USB error: ' + error);
+            if (error) {
+                that.adapter.log.error('USB error: ' + error);
+            }
         });
     }
 };

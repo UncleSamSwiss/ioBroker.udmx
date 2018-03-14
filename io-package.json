@@ -34,7 +34,7 @@
     },
     "native": {
       "addressCount": 1,
-      "mockDevice": true
+      "mockDevice": false
     },
     "objects": [
     ]
