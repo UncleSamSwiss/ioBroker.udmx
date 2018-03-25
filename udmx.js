@@ -51,8 +51,7 @@ DmxAdapter.prototype.main = function (allStates) {
     if (that.adapter.config.mockDevice) {
         that.adapter.log.warn("Using a mock USB device for testing!");
         that._udmxDevice = new MockUsbDevice(that.adapter.log);
-    }
-    else {
+    } else {
         that._udmxDevice = usb.findByIds(vendorId, productId);
         if (!that._udmxDevice) {
             that.adapter.log.error("Couldn't find an Anyma USB adapter, not doing anything!");
@@ -81,8 +80,7 @@ DmxAdapter.prototype.main = function (allStates) {
         var existingValue = allStates[that.adapter.namespace + '.' + i];
         if (existingValue) {
             that._dmxBuffer.writeUInt8(parseInt(existingValue.val), i - 1);
-        }
-        else {
+        } else {
             that.setStateAck(id, 0);
         }
     }
