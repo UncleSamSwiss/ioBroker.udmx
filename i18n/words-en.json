@@ -1,0 +1,5 @@
+{
+  "admin/words.js#uDMX adapter settings": "uDMX adapter settings",
+  "admin/words.js#Number of addresses": "Number of DMX addresses",
+  "admin/words.js#tooltip_addressCount": "Value must be between 1 and 512"
+}
