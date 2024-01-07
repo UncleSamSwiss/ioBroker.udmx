@@ -120,11 +120,11 @@ class Udmx extends utils.Adapter {
         this.setStateAck(id, value);
     }
 
-    private setStateAck(id: string, value: number) {
+    private setStateAck(id: string, value: number): void {
         this.setState(id, { val: value, ack: true });
     }
 
-    private sendDmxBuffer() {
+    private sendDmxBuffer(): void {
         this.udmxDevice?.controlTransfer(0x40, 0x0002, this.dmxBuffer.length, 0, this.dmxBuffer, (error) => {
             if (error) {
                 this.log.error("USB error: " + error);
