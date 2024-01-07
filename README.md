@@ -1,11 +1,3 @@
-***
-**IMPORTANT UPDATE**
-
-Development of this adapter will restart in **August 2020**. Stay tuned!
-
-I will start by resolving the most pressing issues followed by a new major release that brings the adapter up to the latest development standards.
-***
-
 ![uDMX Logo](admin/udmx.png)
 
 # ioBroker adapter for uDMX
@@ -18,10 +10,10 @@ Talks to DMX devices using the Anyma uDMX USB adapter.
 
 You need to have an Anyma uDMX compatible USB adapter. Buy one at one of the following sources:
 
-* [Official Anyma Store](http://www.anyma.ch/store/11-udmx.html)
-* [Clones found on Aliexpress](https://www.aliexpress.com/wholesale?SearchText=USB+dmx)
+-   [Official Anyma Store](http://www.anyma.ch/store/11-udmx.html)
+-   [Clones found on Aliexpress](https://www.aliexpress.com/wholesale?SearchText=USB+dmx)
 
-*IMPORTANT* The author of this adapter is not related to any of the above companies and does not take any responsibility for the proper working of the hardware bought at those links!
+_IMPORTANT_ The author of this adapter is not related to any of the above companies and does not take any responsibility for the proper working of the hardware bought at those links!
 
 ## Install
 
@@ -29,7 +21,7 @@ Before installing, please read the [installation guide of the USB module](https:
 
 Especially make sure, that you have libudev installed:
 
-	sudo apt-get install build-essential libudev-dev
+    sudo apt-get install build-essential libudev-dev
 
 ## Configuration
 
@@ -55,12 +47,14 @@ Please use the GitHub repository to report any bugs or request new features.
 If you require a missing devcies, please provide the type of IC (brand, model, ...) and its address(es) as reported in the adapter configuration.
 
 ## TODO
-* Add possibility to combine states into a channel (e.g. "RGB", "RGBW" or "warm white/cold white")
+
+-   Add possibility to combine states into a channel (e.g. "RGB", "RGBW" or "warm white/cold white")
 
 ## Changelog
 
 ### 0.0.1
-* (UncleSamSwiss) Initial version
+
+-   (UncleSamSwiss) Initial version
 
 ## Thanks
 

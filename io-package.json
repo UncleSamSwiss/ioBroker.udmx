@@ -4,38 +4,87 @@
         "version": "0.0.1",
         "news": {
             "0.0.1": {
-                "en": "initial version",
-                "de": "initial version"
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "uk": "Початкова версія",
+                "zh-cn": "首次出版"
             }
         },
-        "title": "uDMX Adapter",
+        "title": "uDMX",
         "titleLang": {
-            "en": "uDMX Adapter",
-            "de": "uDMX Adapter",
-            "ru": "Драйвер для uDMX"
+            "en": "uDMX",
+            "de": "uDMX",
+            "ru": "UDMX",
+            "pt": "uDMX",
+            "nl": "uDMX",
+            "fr": "uDMX",
+            "it": "uDMX",
+            "es": "uDMX",
+            "pl": "uDMX",
+            "uk": "uDMX",
+            "zh-cn": "DMX"
         },
-        "desc":                     {
+        "desc": {
             "en": "Talks to DMX devices using the Anyma uDMX USB adapter",
-            "de": "Spricht DMX-Geräte mit dem Anyma uDMX USB Adapter an."
+            "de": "Kommuniziert mit DMX-Geräten über den Anyma uDMX USB-Adapter",
+            "ru": "Взаимодействует с устройствами DMX с помощью USB-адаптера Anyma uDMX.",
+            "pt": "Fala com dispositivos DMX usando o adaptador USB Anyma uDMX",
+            "nl": "Praat met DMX-apparaten met behulp van de Anyma uDMX USB-adapter",
+            "fr": "Parle aux appareils DMX à l'aide de l'adaptateur USB Anyma uDMX",
+            "it": "Comunica con i dispositivi DMX utilizzando l'adattatore USB Anyma uDMX",
+            "es": "Habla con dispositivos DMX utilizando el adaptador USB Anyma uDMX",
+            "pl": "Komunikuje się z urządzeniami DMX za pomocą adaptera USB Anyma uDMX",
+            "uk": "Розмовляє з пристроями DMX за допомогою USB-адаптера Anyma uDMX",
+            "zh-cn": "使用 Anyma uDMX USB 适配器与 DMX 设备通信"
         },
         "authors": [
             "UncleSamSwiss <samuel.weibel@gmail.com>"
         ],
-        "license":                  "Apache 2.0",
-        "platform":                 "Javascript/Node.js",
-        "mode":                     "daemon",
-        "messagebox":               true,
-        "readme":                   "https://github.com/UncleSamSwiss/ioBroker.udmx/blob/master/README.md",
-        "loglevel":                 "info",
-        "type":                     "hardware",
-        "keywords":                 ["DMX", "Anyma", "lights"],
-        "icon":                     "udmx.png",
-        "extIcon":                  "https://raw.githubusercontent.com/UncleSamSwiss/ioBroker.udmx/master/admin/udmx.png"
+        "keywords": [
+            "uDMX",
+            "DMX",
+            "Anyma",
+            "lights"
+        ],
+        "license": "Apache-2.0",
+        "platform": "Javascript/Node.js",
+        "main": "build/main.js",
+        "icon": "udmx.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/UncleSamSwiss/ioBroker.udmx/master/admin/udmx.png",
+        "readme": "https://github.com/UncleSamSwiss/ioBroker.udmx/blob/master/README.md",
+        "loglevel": "info",
+        "tier": 3,
+        "mode": "daemon",
+        "type": "hardware",
+        "compact": true,
+        "connectionType": "local",
+        "dataSource": "poll",
+        "adminUI": {
+            "config": "json"
+        },
+        "dependencies": [
+            {
+                "js-controller": ">=3.3.22"
+            }
+        ],
+        "globalDependencies": [
+            {
+                "admin": ">=5.1.13"
+            }
+        ]
     },
     "native": {
-      "addressCount": 1,
-      "mockDevice": false
+        "option1": true,
+        "option2": "42"
     },
-    "objects": [
-    ]
+    "objects": [],
+    "instanceObjects": []
 }

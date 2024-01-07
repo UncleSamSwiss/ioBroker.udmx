@@ -1,0 +1,11 @@
+{
+    "i18n": true,
+    "type": "panel",
+    "items": {
+        "addressCount": {
+            "type": "number",
+            "min": 1,
+            "max": 512
+        }
+    }
+}

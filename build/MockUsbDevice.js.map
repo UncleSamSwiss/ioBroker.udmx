@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/MockUsbDevice.ts"],
+  "sourcesContent": ["import { LibUSBException } from \"usb\";\nimport { IUsbDevice } from \"./IUsbDevice\";\n\nexport class MockUsbDevice implements IUsbDevice {\n    constructor(private readonly logger: ioBroker.Log) {}\n\n    close() {\n        this.logger.info(\"[Mock USB] Closing\");\n    }\n\n    controlTransfer(\n        bmRequestType: number,\n        bRequest: number,\n        wValue: number,\n        wIndex: number,\n        data_or_length: number | Buffer,\n        callback?: ((error: LibUSBException | undefined, buffer: number | Buffer | undefined) => void) | undefined,\n    ) {\n        const data = typeof data_or_length === \"number\" ? data_or_length.toString() : data_or_length.toString(\"hex\");\n        this.logger.info(\"[Mock USB] Transferring \" + data);\n        return this as any;\n    }\n}\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAGO,MAAM,cAAoC;AAAA,EAC7C,YAA6B,QAAsB;AAAtB;AAAA,EAAuB;AAAA,EAEpD,QAAQ;AACJ,SAAK,OAAO,KAAK,oBAAoB;AAAA,EACzC;AAAA,EAEA,gBACI,eACA,UACA,QACA,QACA,gBACA,UACF;AACE,UAAM,OAAO,OAAO,mBAAmB,WAAW,eAAe,SAAS,IAAI,eAAe,SAAS,KAAK;AAC3G,SAAK,OAAO,KAAK,6BAA6B,IAAI;AAClD,WAAO;AAAA,EACX;AACJ;",
+  "names": []
+}

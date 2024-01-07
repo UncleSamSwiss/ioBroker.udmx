@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/IUsbDevice.ts"],
+  "sourcesContent": ["import { LibUSBException } from \"usb\";\n\nexport interface IUsbDevice {\n    controlTransfer(\n        bmRequestType: number,\n        bRequest: number,\n        wValue: number,\n        wIndex: number,\n        data_or_length: number | Buffer,\n        callback?: ((error: LibUSBException | undefined, buffer: number | Buffer | undefined) => void) | undefined,\n    ): void;\n    close(): void;\n}\n"],
+  "mappings": ";;;;;;;;;;;;;;AAAA;AAAA;",
+  "names": []
+}
