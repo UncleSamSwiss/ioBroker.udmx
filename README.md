@@ -51,8 +51,7 @@ If you require a missing devcies, please provide the type of IC (brand, model, .
 -   Add possibility to combine states into a channel (e.g. "RGB", "RGBW" or "warm white/cold white")
 
 ## Changelog
-
-### **WORK IN PROGRESS**
+### 0.0.2 (2024-01-07)
 
 -   (UncleSamSwiss) Update all ioBroker dependencies
 

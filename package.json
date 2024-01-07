@@ -1,6 +1,6 @@
 {
   "name": "iobroker.udmx",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Talks to DMX devices using the Anyma uDMX USB adapter",
   "author": {
     "name": "UncleSamSwiss",
