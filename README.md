@@ -52,6 +52,10 @@ If you require a missing devcies, please provide the type of IC (brand, model, .
 
 ## Changelog
 
+### **WORK IN PROGRESS**
+
+-   (UncleSamSwiss) Update all ioBroker dependencies
+
 ### 0.0.1
 
 -   (UncleSamSwiss) Initial version
