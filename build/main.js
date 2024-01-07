@@ -69,7 +69,7 @@ class Udmx extends utils.Adapter {
         },
         native: {}
       };
-      this.setObjectNotExistsAsync(id, obj);
+      await this.setObjectNotExistsAsync(id, obj);
       const existingValue = allStates[this.namespace + "." + id];
       if (existingValue && typeof existingValue.val === "number") {
         this.dmxBuffer.writeUInt8(existingValue.val, i - 1);

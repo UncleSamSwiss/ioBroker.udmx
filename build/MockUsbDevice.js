@@ -28,7 +28,7 @@ class MockUsbDevice {
   close() {
     this.logger.info("[Mock USB] Closing");
   }
-  controlTransfer(bmRequestType, bRequest, wValue, wIndex, data_or_length, callback) {
+  controlTransfer(bmRequestType, bRequest, wValue, wIndex, data_or_length, _callback) {
     const data = typeof data_or_length === "number" ? data_or_length.toString() : data_or_length.toString("hex");
     this.logger.info("[Mock USB] Transferring " + data);
     return this;
